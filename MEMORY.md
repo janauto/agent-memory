@@ -9,3 +9,5 @@
 环境：libredwg已通过brew安装，提供dwg2dxf工具。可转换AC1032(AutoCAD 2018)格式DWG文件为DXF，然后用ezdxf读取。天正(TCH)自定义实体会被跳过但不影响核心数据提取。春湾中学电气DWG文件(电施_t8.dwg)包含完整电气系统图和平面图，已成功提取2ALG/2ALE/AL2-4/防雷系统信息。
 §
 macOS上weasyprint不可用（缺少gobject/pango共享库）。生成中文PDF用pymupdf + china-s内置字体，无需额外依赖。
+§
+Markdown转Word流程：①用matplotlib生成流程图PNG（中文字体用PingFang SC/Heiti SC）②用python-docx生成Word，含表格、层级标题、加粗、列表③流程图以doc.add_picture(width=Inches(5.5))嵌入并居中。脚本路径/tmp/gen_docx.py可复用。注意Python字符串中中文引号用\u201c\u201d转义避免语法错误。
