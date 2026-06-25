@@ -1,6 +1,6 @@
 中文用户，使用微信与 Hermes 交互。配置了多个 AI 模型提供商：小米 (mimo-v2.5-pro) 和 kuaipao.ai (claude-opus-4-8 等)。熟悉 API 配置，会频繁切换模型。
 §
-硬件方案商，深圳。当前做品胜(PISEN)带屏幕充电头竞品调研，项目在Obsidian `OBVault/调研/品胜屏显充电头/`。曾为钉钉悟空产品线供硬件方案。核心诉求：用AI加速硬件建模（外壳/PCB/概念图），供应商对接、降本方案评估。
+硬件方案商，深圳。当前做品胜(PISEN)带屏幕充电头竞品调研，项目在Obsidian `OBVault/调研/品胜屏显充电头/`。曾为钉钉悟空产品线供硬件方案。核心诉求：用AI加速硬件建模（外壳/PCB/概念图），供应商对接、降本方案评估。构建过硬件原型验证Web框架（事件驱动模块耦合+PRD解析+拓扑图+手机模拟器），验证硬件产品交互原型。
 §
 User communicates in Chinese and prefers responses in Chinese with structured formatting (tables, Obsidian callouts like [!warning]/[!tip]).
 §
