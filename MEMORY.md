@@ -11,3 +11,7 @@
 macOS上weasyprint不可用（缺少gobject/pango共享库）。生成中文PDF用pymupdf + china-s内置字体，无需额外依赖。
 §
 Markdown转Word流程：①用matplotlib生成流程图PNG（中文字体用PingFang SC/Heiti SC）②用python-docx生成Word，含表格、层级标题、加粗、列表③流程图以doc.add_picture(width=Inches(5.5))嵌入并居中。脚本路径/tmp/gen_docx.py可复用。注意Python字符串中中文引号用\u201c\u201d转义避免语法错误。
+§
+pptxgenjs全局安装后Node找不到模块。修复：在项目目录本地安装 `cd /tmp/ppt_project && npm init -y && npm install pptxgenjs`，然后从该目录运行 `node create_ppt.js`。
+§
+中文文件名含括号（如"项目管理(5).docx"）时，bash内联python -c会解析失败。解决：写成.py脚本文件再执行，不要用inline -c。读取格式：.doc用textutil转txt，.docx用python-docx，.xlsx用openpyxl。
